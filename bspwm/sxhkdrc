@@ -1,0 +1,117 @@
+# Spotify
+super + F1
+    spotify
+
+#volume dowm
+super + F2
+    sh $HOME/.config/dunst/changevolume down
+
+# Volume UP
+super + F3
+    sh $HOME/.config/dunst/changevolume up
+
+# Chrome
+super + F4
+    firefox
+
+# Music move backward
+super + F5
+    playerctl previous
+
+# Music move backward
+super + F6
+    playerctl next
+
+# play
+super + F7
+    playerctl play-pause
+
+#Stop
+super + F8
+    playerctl stop
+
+#Thunar
+super + F9
+    thunar
+
+super + F10
+    tmux
+
+#Htop
+super + F11
+    kitty htop
+
+# codium
+super + F12
+    kitty nvim
+
+#kitty
+super + Return
+    kitty
+
+#Xkill
+super + Escape
+    xkill
+
+# rofi
+super + x
+	sh $HOME/.config/rofi/powermenu
+
+super + r
+    rofi -show drun
+
+#reload sxhkd:
+super + shift + k
+	pkill -USR1 -x sxhkd
+
+#Pulse Audio Control
+ctrl + alt + u
+     pavucontrolva 
+
+#Toggle fullscreen of window
+super + f
+	bspc node --state \~fullscreen
+
+#kill
+alt + q
+	bspc node -c
+
+#Focus selected desktop
+super + Tab
+	bspc desktop -f '^{1-4,5}'
+
+# Increase/decrease window gap on focused desktop
+super + bracket{left,right}
+	bspc config -d focused window_gap $((`bspc config -d focused window_gap` {-,+} 5 ))
+
+#Reload bspwm
+super + shift + r
+	~/.config/bspwm/bspwmrc
+
+#kill
+super + shift + q
+	bspc node -c
+
+# set the window state
+super + space
+	bspc node -t {tiled,pseudo_tiled,floating}
+
+# Expanding windows
+ctrl + super + {Left,Right,Up,Down}
+	bspc node -z {left -50 0,right 50 0,top 0 -50,bottom 0 50}
+	
+# Shrinking windows
+super + alt + {Left,Right,Up,Down}
+	bspc node -z {left 50 0,right -50 0,top 0 50,bottom 0 -50}
+
+#swhitch windows
+ctrl + {_,shift +}{Left,Down,Up,Right}
+	bspc node --{focus,swap} {west,south,north,east}
+
+#move focused window to other workspace
+super + {Left,Right}
+	bspc node -d {prev,next} '--follow'
+
+# Move floating windows
+super + alt + shift + {Left,Down,Up,Right}
+	bspc node -v {-30 0,0 30,0 -30,30 0}
