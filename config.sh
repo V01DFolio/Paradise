@@ -32,7 +32,6 @@ sudo cp -r ~/Paradise/polybar ~/.config/polybar
 sudo cp -r ~/Paradise/rofi ~/.config/rofi
 sudo cp -r ~/Paradise/spicetify/Themes ~/.config/spicetify/Themes/
 sudo cp -r ~/Paradise/Walls ~/Pictures/
-sudo cp -r ~/Paradise/p10k.zsh ~/
-sudo cp -r ~/Paradise/.zshrc ~/
+sudo cp ~/Paradise/p10k.zsh ~/
+sudo cp ~/Paradise/.zshrc ~/
 sudo cp ~/Paradise/redshift.conf ~/.config/
-
