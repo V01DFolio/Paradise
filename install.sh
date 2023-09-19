@@ -10,12 +10,8 @@ printf "########################################################################
 ######################### Installing Programs  ###############################################
 ##########################################################################################"
 
-yay -S lightdm lightdm-webkit2-greeter ly bspwm sxhkd kitty xorg-xinput ntfs-3g zsh pulseaudio pavucontrol font-manager feh pfetch rofi polybar eww dunst redshift lxappearance os-prober nemo stacer polkit-gnome gvfs htop firefox spotify playerctl pamixer xarchiver unzip plymouth nodejs npm grub-customizer
+yay -S lightdm lightdm-webkit2-greeter bspwm sxhkd kitty xorg-xinput ntfs-3g zsh pulseaudio pavucontrol font-manager feh pfetch rofi polybar dunst redshift lxappearance os-prober nemo stacer polkit-gnome gvfs firefox spotify playerctl pamixer xarchiver unzip plymouth nodejs npm grub-customizer xclip
 
-printf "##########################################################################################
-######################### Installing nvChad for nvim  ###############################################
-##########################################################################################"
-git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
 
 printf "##########################################################################################
 ######################### Installing picom  ###############################################
@@ -27,19 +23,17 @@ printf "########################################################################
 ######################### Fonts  ###############################################
 ##########################################################################################"
 
-yay -S ttf-icomoon-feather ttf-iosevka ttf-jetbrains-mono ttf-nerd-fonts-symbols
+yay -S ttf-icomoon-feather ttf-iosevka ttf-jetbrains-mono ttf-nerd-fonts-symbols ttf-font-awesome
 
 printf "##########################################################################################
 ######################### Installing spiectify  ###############################################
 ##########################################################################################"
 
 curl -fsSL https://raw.githubusercontent.com/spicetify/spicetify-cli/master/install.sh | &&
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" &&
 
-printf "#######################################################################
-################# Configuring system  ####################################
-##########################################################################"
-
-mkdir -p .config/bspwm/
-
-echo "Installing oh-my-zsh"
+printf "##########################################################################################
+######################### install oh my zsh  ###############################################
+##########################################################################################"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+

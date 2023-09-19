@@ -1,0 +1,32 @@
+[Boot]
+Grub
+os-prober
+grub-customization
+Plymouth
+
+
+[Lockscreen]
+Lightdm (webkit)
+
+
+[Home]
+Bspwm
+Sxhkd
+Wallpaper
+Picom
+
+[Terminal]
+kitty
+oh my zsh
+p10k
+auto suggestion
+syntax highting
+
+[System]
+gtk (cursor , icons)
+nemo
+Vim
+spotify
+firefox
+dunst
+rofi
