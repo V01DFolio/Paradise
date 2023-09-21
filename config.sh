@@ -6,6 +6,7 @@ printf"########################## Setting up grub ############################"
 sudo cp /etc/default/grub ~/
 sudo cp ~/Paradise/grub/grub /etc/default/
 sudo cp -r ~/Paradise/grub/theme/paradise /usr/share/grub/themes/
+sudo grub-mkconfig -o /boot/grub/grub.cfg
 
 printf"######################### SETTING UP LIGHTDM DM #######################"
 
@@ -19,9 +20,8 @@ sudo plymouth-set-default-theme -R cuts
 
 printf"######################## BSPWM ###########################"
 
-mkdir -p ~/.config/bspwm/
 
-sudo cp -r ~/Paradise/bspwm ~/.config/bspwm
+sudo cp -r ~/Paradise/bspwm ~/.config/
 
 
 printf"######################### OTHERS ############ "
@@ -35,3 +35,6 @@ sudo cp -r ~/Paradise/Walls ~/Pictures/
 sudo cp ~/Paradise/p10k.zsh ~/
 sudo cp ~/Paradise/.zshrc ~/
 sudo cp ~/Paradise/redshift.conf ~/.config/
+
+
+echo "LIGHTDM PLYMOUTH"

@@ -46,7 +46,7 @@ super + F12
     kitty nvim
 
 #kitty
-super + Return
+super + k
     kitty
 
 #Xkill
@@ -73,7 +73,7 @@ super + f
 	bspc node --state \~fullscreen
 
 #kill
-alt + q
+alt + c
 	bspc node -c
 
 #Focus selected desktop
