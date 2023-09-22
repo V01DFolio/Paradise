@@ -30,7 +30,7 @@ sudo cp -r ~/Paradise/kitty ~/.config/kitty
 sudo cp -r ~/Paradise/nvim ~/.config/nvim
 sudo cp -r ~/Paradise/polybar ~/.config/polybar 
 sudo cp -r ~/Paradise/rofi ~/.config/rofi
-sudo cp -r ~/Paradise/spicetify/Themes ~/.config/spicetify/Themes/
+sudo cp -r ~/Paradise/spicetify/Themes ~/.config/spicetify/
 sudo cp -r ~/Paradise/walls ~/Pictures/
 sudo cp ~/Paradise/p10k.zsh ~/
 sudo cp ~/Paradise/.zshrc ~/

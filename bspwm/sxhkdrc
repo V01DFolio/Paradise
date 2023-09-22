@@ -32,21 +32,21 @@ super + F8
 
 #Thunar
 super + F9
-    thunar
+    nemo
 
+#stacer
 super + F10
-    tmux
+    stacer
 
-#Htop
 super + F11
-    kitty htop
+    kitty -e htop
 
 # codium
 super + F12
     kitty nvim
 
 #kitty
-super + k
+super + return
     kitty
 
 #Xkill
@@ -55,10 +55,10 @@ super + Escape
 
 # rofi
 super + x
-	sh $HOME/.config/rofi/powermenu
+    sh $HOME/.config/rofi/powermenu/type-2/powermenu.sh
 
 super + r
-    rofi -show drun
+    sh $HOME/.config/rofi/launchers/type-1/launcher.sh
 
 #reload sxhkd:
 super + shift + k
@@ -115,3 +115,7 @@ super + {Left,Right}
 # Move floating windows
 super + alt + shift + {Left,Down,Up,Right}
 	bspc node -v {-30 0,0 30,0 -30,30 0}
+
+# change focus window
+alt + {_,shift + }Tab
+	bspc node -f {next.local,prev.local}
