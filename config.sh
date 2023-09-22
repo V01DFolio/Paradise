@@ -36,5 +36,14 @@ sudo cp ~/Paradise/p10k.zsh ~/
 sudo cp ~/Paradise/.zshrc ~/
 sudo cp ~/Paradise/redshift.conf ~/.config/
 
+printf"####################### GTK #######################"
+git clone https://github.com/paradise-theme/gtk.git para
+cd para
+make
+sudo make install
+
+bash -c "$(curl -sSf https://raw.githubusercontent.com/Delta-Icons/linux/master/install.sh)"
+
+
 
 echo "LIGHTDM PLYMOUTH"

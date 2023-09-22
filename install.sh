@@ -10,7 +10,7 @@ printf "########################################################################
 ######################### Installing Programs  ###############################################
 ##########################################################################################"
 
-yay -S lightdm lightdm-webkit2-greeter bspwm sxhkd kitty xorg-xinput ntfs-3g zsh pulseaudio pavucontrol font-manager feh pfetch rofi polybar dunst redshift lxappearance os-prober nemo stacer polkit-gnome gvfs firefox spotify playerctl pamixer xarchiver unzip plymouth nodejs npm grub-customizer xclip ripgrep htop
+yay -S lightdm lightdm-webkit2-greeter bspwm sxhkd kitty xorg-xinput ntfs-3g zsh pulseaudio pavucontrol font-manager feh pfetch rofi polybar dunst redshift lxappearance os-prober nemo stacer polkit-gnome gvfs firefox spotify playerctl pamixer xarchiver unzip plymouth nodejs npm grub-customizer xclip ripgrep htop phinger-cursors
 
 
 printf "##########################################################################################
